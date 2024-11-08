@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/FotoFelipe.jpg">
+    <style>
+      *{/*Los parámetros aplicados aquí afectarán a toda la página*/
+        font-family: Times; /*Fuente de todo el documento*/
+        margin: 10px;  /*establece los márgenes de un elemento especificando entre 1 y 4 valores*/
+      }
+
+      header, footer { /*al incluir más de una etiqueta en un grupo, estos parámetros serán aplicados en ambas etiquetas*/
+        display: flex;/*establece los tipos de visualización interna y externa de un elemento*/
+        justify-content: center; /*justifica el contenido de la etiqueta*/
+        background-color: #9fdf28;
+        height: 50px;
+      }
+
+      #foto {
+        border-radius: 10px; /*crea un radio en los parámetros especificados*/
+        box-shadow: 15px; /*crea una sombrea interna en la imagen*/
+        float: right; /*ubica un elemento al lado izquierdo o derecho de su contenedor para aparecer a su costado*/
+        width: 200px;
+        height: 200px;
+      }
+
+      #navegador{
+        background-color: rgb(175, 247, 243);
+      }
+
+      #name:hover { /*el parámetro hover modifica la reacción de la página al contacto con el mouse*/
+        font-weight: bold; /*decide el grosor de cualquier línea o de cualquier fuente*/
+        color: rgb(180, 168, 168);
+      }
+
+      ol {
+        margin: 20px 0 0 -20px;
+        color: rgb(94, 84, 84);
+        font-size: 16px; /*tamaño de la fuente utilizada*/
+      }
+
+      a {
+        text-decoration: none; /*decide si al enlace se lo coloca con azul y subrayado*/
+        color: black;
+      }
+
+      a:hover {
+        font-weight: bold;
+        color: black;
+      }
+
+      a:active { /*active indica que si el enlace junto al que está, es presionado, se cumplirán ciertos parámetros en la misma*/
+         color: blue;
+      }
+
+      li {
+        margin-top: 12px;
+      }
+    </style>
+
+    <title>HOJA DE VIDA</title>
+  </head>
+  <body>
+    <header>
+      <h2 id="name">DANIELA NICOLE GARCÍA HUILCA </h2>
+    </header>
+    
+    <nav id="navegador">
+      <ul>
+        <li><a href="estudios.html">ESTUDIOS</a></li>
+        <li><a href="contacto.html">CONTACTOS</a></li>
+        
+      </ul>
+    </nav>
+    <aside>
+      <img id="foto" src="foto.jpg.PNG" width="300" height="200" class="foto" />
+      <h4>OBJETIVO PERSONAL</h4>
+      <p>Vendedor entusiasta y con iniciativa. Soy una persona comunicativa y atenta a las necesidades de los clientes comprometiendome 
+        a brindar el mejor servicio en cada ocasión y a hacer de la venta una experiencia altamente positiva. Busco adquirir conocimientos
+        y desarrollarme en el sector comercial</p>
+      <h4>EXPERIENCIA </h4>
+      <p>Cuento con experiencia en:  </p>
+      <ul>
+        <h3>VENDEDOR</h3>
+        <li> Venta en línea de maquillaje</li>
+        <li>Atención adecuada a los clientes para lograr su fidelización</li>
+        <h3> CAJERO Y MESERO</h3>
+        <li>Atención y servicio al cliente</li>
+        <li>Manejo de dinero y gestión de caja</li>
+        <h3> CALL CENTER</h3>
+        <li>Responder llamadas de usuarios que buscaban el servicio de taxi, contactar con un conductor e informarle la dirección</li>
+      </ul>
+
+      <h4>APTITUDES</h4>
+      <p>
+        <li>Responsabilidad y puntualidad</li>
+        <li> Servicio al cliente</li>
+        <li>Comunicación clara y eficaz</li>
+        <li>Honradez y compromiso</li>
+      </p>
+    </aside>
+    <footer>
+      <p id="DIRECCIÓN">
+        Calle Jose Olmos y Malacatos <span>Chaguarquingo</span>
+      </p>
+    </footer>
+  </body>
+</html>
